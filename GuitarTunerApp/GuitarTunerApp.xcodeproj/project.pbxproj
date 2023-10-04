@@ -9,21 +9,44 @@
 /* Begin PBXBuildFile section */
 		C710451A2ACC47E000DB7E44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71045192ACC47E000DB7E44 /* AppDelegate.swift */; };
 		C710451C2ACC47E000DB7E44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C710451B2ACC47E000DB7E44 /* SceneDelegate.swift */; };
-		C710451E2ACC47E000DB7E44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C710451D2ACC47E000DB7E44 /* ViewController.swift */; };
-		C71045212ACC47E000DB7E44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C710451F2ACC47E000DB7E44 /* Main.storyboard */; };
+		C710451E2ACC47E000DB7E44 /* TunerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C710451D2ACC47E000DB7E44 /* TunerViewController.swift */; };
 		C71045232ACC47E100DB7E44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C71045222ACC47E100DB7E44 /* Assets.xcassets */; };
 		C71045262ACC47E100DB7E44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71045242ACC47E100DB7E44 /* LaunchScreen.storyboard */; };
+		C710BE1A2ACDA4E500DA5B01 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C710BE192ACDA4E500DA5B01 /* Note.swift */; };
+		C710BE1C2ACDA79500DA5B01 /* FrequencyDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C710BE1B2ACDA79500DA5B01 /* FrequencyDetector.swift */; };
+		C772E2AA2ACCB48C00D9AF59 /* AudioKitEX in Frameworks */ = {isa = PBXBuildFile; productRef = C772E2A92ACCB48C00D9AF59 /* AudioKitEX */; };
+		C772E2AD2ACCB53700D9AF59 /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = C772E2AC2ACCB53700D9AF59 /* SoundpipeAudioKit */; };
+		C776C1292ACC4B2A00B797F0 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = C776C1282ACC4B2A00B797F0 /* AudioKit */; };
+		C7B9C9032ACDB4DB00C41995 /* TunerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9C9022ACDB4DB00C41995 /* TunerBuilder.swift */; };
+		C7B9C9062ACDB68600C41995 /* TunerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9C9052ACDB68600C41995 /* TunerData.swift */; };
+		C7B9C9082ACDB69700C41995 /* TunerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9C9072ACDB69700C41995 /* TunerImpl.swift */; };
+		C7B9C90B2ACDB6EA00C41995 /* FrequencyDetectorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9C90A2ACDB6EA00C41995 /* FrequencyDetectorImpl.swift */; };
+		C7B9C90F2ACDB76100C41995 /* AudioInputImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9C90E2ACDB76100C41995 /* AudioInputImpl.swift */; };
+		C7C8DE662ACDCC3900C55A6D /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C8DE652ACDCC3900C55A6D /* Notes.swift */; };
+		C7F271A72ACDA99300E37CDF /* Instruments.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F271A62ACDA99300E37CDF /* Instruments.swift */; };
+		C7F271AB2ACDACEE00E37CDF /* AudioInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F271AA2ACDACEE00E37CDF /* AudioInput.swift */; };
+		C7F271AD2ACDAFEA00E37CDF /* Tuner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F271AC2ACDAFEA00E37CDF /* Tuner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C71045162ACC47E000DB7E44 /* GuitarTunerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitarTunerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C71045192ACC47E000DB7E44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C710451B2ACC47E000DB7E44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C710451D2ACC47E000DB7E44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C71045202ACC47E000DB7E44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C710451D2ACC47E000DB7E44 /* TunerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerViewController.swift; sourceTree = "<group>"; };
 		C71045222ACC47E100DB7E44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C71045252ACC47E100DB7E44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C71045272ACC47E100DB7E44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C710BE192ACDA4E500DA5B01 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		C710BE1B2ACDA79500DA5B01 /* FrequencyDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyDetector.swift; sourceTree = "<group>"; };
+		C7B9C9022ACDB4DB00C41995 /* TunerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerBuilder.swift; sourceTree = "<group>"; };
+		C7B9C9052ACDB68600C41995 /* TunerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerData.swift; sourceTree = "<group>"; };
+		C7B9C9072ACDB69700C41995 /* TunerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerImpl.swift; sourceTree = "<group>"; };
+		C7B9C90A2ACDB6EA00C41995 /* FrequencyDetectorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyDetectorImpl.swift; sourceTree = "<group>"; };
+		C7B9C90E2ACDB76100C41995 /* AudioInputImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioInputImpl.swift; sourceTree = "<group>"; };
+		C7C8DE652ACDCC3900C55A6D /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		C7F271A62ACDA99300E37CDF /* Instruments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruments.swift; sourceTree = "<group>"; };
+		C7F271AA2ACDACEE00E37CDF /* AudioInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioInput.swift; sourceTree = "<group>"; };
+		C7F271AC2ACDAFEA00E37CDF /* Tuner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C776C1292ACC4B2A00B797F0 /* AudioKit in Frameworks */,
+				C772E2AA2ACCB48C00D9AF59 /* AudioKitEX in Frameworks */,
+				C772E2AD2ACCB53700D9AF59 /* SoundpipeAudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +82,121 @@
 		C71045182ACC47E000DB7E44 /* GuitarTunerApp */ = {
 			isa = PBXGroup;
 			children = (
+				C71045322ACC493000DB7E44 /* Screens */,
+				C710452D2ACC487900DB7E44 /* Application */,
+				C71045302ACC491500DB7E44 /* Library */,
+				C710452E2ACC487F00DB7E44 /* Resources */,
+				C710452F2ACC489200DB7E44 /* SupportingFiles */,
+			);
+			path = GuitarTunerApp;
+			sourceTree = "<group>";
+		};
+		C710452D2ACC487900DB7E44 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				C71045192ACC47E000DB7E44 /* AppDelegate.swift */,
 				C710451B2ACC47E000DB7E44 /* SceneDelegate.swift */,
-				C710451D2ACC47E000DB7E44 /* ViewController.swift */,
-				C710451F2ACC47E000DB7E44 /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C710452E2ACC487F00DB7E44 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				C71045222ACC47E100DB7E44 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C710452F2ACC489200DB7E44 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				C71045242ACC47E100DB7E44 /* LaunchScreen.storyboard */,
 				C71045272ACC47E100DB7E44 /* Info.plist */,
 			);
-			path = GuitarTunerApp;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		C71045302ACC491500DB7E44 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C7F271A82ACDA9B600E37CDF /* Models */,
+				C71045312ACC491F00DB7E44 /* Services */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		C71045312ACC491F00DB7E44 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C7B9C9092ACDB6D700C41995 /* AudioServices */,
+				C7B9C9042ACDB66D00C41995 /* Tuner */,
+				C7B9C9022ACDB4DB00C41995 /* TunerBuilder.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C71045322ACC493000DB7E44 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C71045332ACC494100DB7E44 /* TunerScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C71045332ACC494100DB7E44 /* TunerScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C710451D2ACC47E000DB7E44 /* TunerViewController.swift */,
+			);
+			path = TunerScreen;
+			sourceTree = "<group>";
+		};
+		C7B9C9042ACDB66D00C41995 /* Tuner */ = {
+			isa = PBXGroup;
+			children = (
+				C7F271AC2ACDAFEA00E37CDF /* Tuner.swift */,
+				C7B9C9072ACDB69700C41995 /* TunerImpl.swift */,
+			);
+			path = Tuner;
+			sourceTree = "<group>";
+		};
+		C7B9C9092ACDB6D700C41995 /* AudioServices */ = {
+			isa = PBXGroup;
+			children = (
+				C7B9C90D2ACDB75400C41995 /* AudioInput */,
+				C7B9C90C2ACDB72800C41995 /* FrequencyDetector */,
+			);
+			path = AudioServices;
+			sourceTree = "<group>";
+		};
+		C7B9C90C2ACDB72800C41995 /* FrequencyDetector */ = {
+			isa = PBXGroup;
+			children = (
+				C710BE1B2ACDA79500DA5B01 /* FrequencyDetector.swift */,
+				C7B9C90A2ACDB6EA00C41995 /* FrequencyDetectorImpl.swift */,
+			);
+			path = FrequencyDetector;
+			sourceTree = "<group>";
+		};
+		C7B9C90D2ACDB75400C41995 /* AudioInput */ = {
+			isa = PBXGroup;
+			children = (
+				C7F271AA2ACDACEE00E37CDF /* AudioInput.swift */,
+				C7B9C90E2ACDB76100C41995 /* AudioInputImpl.swift */,
+			);
+			path = AudioInput;
+			sourceTree = "<group>";
+		};
+		C7F271A82ACDA9B600E37CDF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C7B9C9052ACDB68600C41995 /* TunerData.swift */,
+				C710BE192ACDA4E500DA5B01 /* Note.swift */,
+				C7C8DE652ACDCC3900C55A6D /* Notes.swift */,
+				C7F271A62ACDA99300E37CDF /* Instruments.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +215,11 @@
 			dependencies = (
 			);
 			name = GuitarTunerApp;
+			packageProductDependencies = (
+				C776C1282ACC4B2A00B797F0 /* AudioKit */,
+				C772E2A92ACCB48C00D9AF59 /* AudioKitEX */,
+				C772E2AC2ACCB53700D9AF59 /* SoundpipeAudioKit */,
+			);
 			productName = GuitarTunerApp;
 			productReference = C71045162ACC47E000DB7E44 /* GuitarTunerApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +248,11 @@
 				Base,
 			);
 			mainGroup = C710450D2ACC47E000DB7E44;
+			packageReferences = (
+				C776C1272ACC4B2A00B797F0 /* XCRemoteSwiftPackageReference "AudioKit" */,
+				C772E2A82ACCB48C00D9AF59 /* XCRemoteSwiftPackageReference "AudioKitEX" */,
+				C772E2AB2ACCB53700D9AF59 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
+			);
 			productRefGroup = C71045172ACC47E000DB7E44 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +269,6 @@
 			files = (
 				C71045262ACC47E100DB7E44 /* LaunchScreen.storyboard in Resources */,
 				C71045232ACC47E100DB7E44 /* Assets.xcassets in Resources */,
-				C71045212ACC47E000DB7E44 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +279,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C710451E2ACC47E000DB7E44 /* ViewController.swift in Sources */,
+				C7B9C90B2ACDB6EA00C41995 /* FrequencyDetectorImpl.swift in Sources */,
+				C7C8DE662ACDCC3900C55A6D /* Notes.swift in Sources */,
+				C710451E2ACC47E000DB7E44 /* TunerViewController.swift in Sources */,
+				C7B9C90F2ACDB76100C41995 /* AudioInputImpl.swift in Sources */,
+				C710BE1A2ACDA4E500DA5B01 /* Note.swift in Sources */,
+				C7B9C9082ACDB69700C41995 /* TunerImpl.swift in Sources */,
 				C710451A2ACC47E000DB7E44 /* AppDelegate.swift in Sources */,
+				C710BE1C2ACDA79500DA5B01 /* FrequencyDetector.swift in Sources */,
+				C7B9C9062ACDB68600C41995 /* TunerData.swift in Sources */,
+				C7F271AB2ACDACEE00E37CDF /* AudioInput.swift in Sources */,
+				C7F271A72ACDA99300E37CDF /* Instruments.swift in Sources */,
+				C7F271AD2ACDAFEA00E37CDF /* Tuner.swift in Sources */,
+				C7B9C9032ACDB4DB00C41995 /* TunerBuilder.swift in Sources */,
 				C710451C2ACC47E000DB7E44 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +299,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C710451F2ACC47E000DB7E44 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C71045202ACC47E000DB7E44 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C71045242ACC47E100DB7E44 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,12 +433,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YV94F8SKGT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GuitarTunerApp/Info.plist;
+				INFOPLIST_FILE = GuitarTunerApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +446,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = space.redoctopus.GuitarTunerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +464,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YV94F8SKGT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GuitarTunerApp/Info.plist;
+				INFOPLIST_FILE = GuitarTunerApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +477,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = space.redoctopus.GuitarTunerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +508,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C772E2A82ACCB48C00D9AF59 /* XCRemoteSwiftPackageReference "AudioKitEX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKitEX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		C772E2AB2ACCB53700D9AF59 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/SoundpipeAudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		C776C1272ACC4B2A00B797F0 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C772E2A92ACCB48C00D9AF59 /* AudioKitEX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C772E2A82ACCB48C00D9AF59 /* XCRemoteSwiftPackageReference "AudioKitEX" */;
+			productName = AudioKitEX;
+		};
+		C772E2AC2ACCB53700D9AF59 /* SoundpipeAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C772E2AB2ACCB53700D9AF59 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */;
+			productName = SoundpipeAudioKit;
+		};
+		C776C1282ACC4B2A00B797F0 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C776C1272ACC4B2A00B797F0 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C710450E2ACC47E000DB7E44 /* Project object */;
 }
