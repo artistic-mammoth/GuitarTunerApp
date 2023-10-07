@@ -6,27 +6,19 @@
 //
 
 
-/// Implementation of FrequencyDetector
+/// Implementation of Tuner
 final class TunerImpl: Tuner {
     // MARK: - Public properties
-    var dataHandler: ((TunerData) -> ())?
+    var dataHandler: ((_ frequency: Double) -> ())?
     
     // MARK: - Private properties
     private var detector: FrequencyDetector
     private let audioInput: AudioInput
-    
-    private var currentNotes: Notes?
-    private var data: TunerData = TunerData() {
-        didSet {
-            dataHandler?(data)
-        }
-    }
-    
+
     // MARK: - Init
-    init(detector: FrequencyDetector, audioInput: AudioInput, currentNotes: Notes? = nil) {
+    init(detector: FrequencyDetector, audioInput: AudioInput) {
         self.detector = detector
         self.audioInput = audioInput
-        self.currentNotes = currentNotes
     }
     
     // MARK: - Tuner
@@ -36,17 +28,15 @@ final class TunerImpl: Tuner {
         
         detector.frequencyHandler = { [weak self] frequency in
             guard let self = self else { print("No TunerImpl"); return }
-            let closestNote = self.currentNotes?.findClosestTo(frequency)
-            guard let closestNote = closestNote else { print("No Notes"); return }
-            let offset = closestNote.frequency - frequency
-            let newData = TunerData(currentNote: closestNote, offset: offset)
-            self.data = newData
+            self.dataHandler?(frequency)
         }
         
         audioInput.startEngine()
     }
     
-    func setupNotes(_ notes: Notes) {
-        currentNotes = notes
+    func stopDetecting() {
+        detector.stopTracker()
+        detector.frequencyHandler = nil
+        audioInput.stopEngine()
     }
 }

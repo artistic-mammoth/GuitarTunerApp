@@ -16,7 +16,10 @@ protocol FrequencyDetector {
      Start of detection for microphone
      
      - Parameters:
-     - microphone: input microphone to detect
+        - microphone: input microphone to detect
      */
     func startTracker(with microphone: AudioEngine.InputNode)
+    
+    /// Stop detection
+    func stopTracker()
 }

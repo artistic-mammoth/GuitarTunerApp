@@ -29,6 +29,11 @@ final class FrequencyDetectorImpl: FrequencyDetector {
         tracker.start()
     }
     
+    func stopTracker() {
+        frequencyHandler = nil
+        tracker.stop()
+    }
+    
     // MARK: - Private methods
     private func update(_ pitch: AUValue, _ amp: AUValue) {
         guard amp > 0.1 else { return }

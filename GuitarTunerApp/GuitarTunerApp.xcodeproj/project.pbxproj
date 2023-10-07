@@ -9,44 +9,88 @@
 /* Begin PBXBuildFile section */
 		C710451A2ACC47E000DB7E44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71045192ACC47E000DB7E44 /* AppDelegate.swift */; };
 		C710451C2ACC47E000DB7E44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C710451B2ACC47E000DB7E44 /* SceneDelegate.swift */; };
-		C710451E2ACC47E000DB7E44 /* TunerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C710451D2ACC47E000DB7E44 /* TunerViewController.swift */; };
+		C710451E2ACC47E000DB7E44 /* TunerViewImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C710451D2ACC47E000DB7E44 /* TunerViewImpl.swift */; };
 		C71045232ACC47E100DB7E44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C71045222ACC47E100DB7E44 /* Assets.xcassets */; };
 		C71045262ACC47E100DB7E44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71045242ACC47E100DB7E44 /* LaunchScreen.storyboard */; };
 		C710BE1A2ACDA4E500DA5B01 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C710BE192ACDA4E500DA5B01 /* Note.swift */; };
 		C710BE1C2ACDA79500DA5B01 /* FrequencyDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C710BE1B2ACDA79500DA5B01 /* FrequencyDetector.swift */; };
+		C74A12A12ACEA80E00482031 /* NotePickerViewImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A12A02ACEA80E00482031 /* NotePickerViewImpl.swift */; };
+		C74A12A42ACEA95200482031 /* UIView+addViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A12A32ACEA95200482031 /* UIView+addViews.swift */; };
+		C74A12A62ACEAADA00482031 /* NotePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A12A52ACEAADA00482031 /* NotePickerCell.swift */; };
+		C76D462D2AD2087700702661 /* TunerOffsetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76D462C2AD2087700702661 /* TunerOffsetView.swift */; };
+		C76D462F2AD2096200702661 /* TunerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76D462E2AD2096200702661 /* TunerView.swift */; };
+		C76D46312AD20B0800702661 /* Catalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76D46302AD20B0800702661 /* Catalog.swift */; };
+		C76D46332AD20CCB00702661 /* TunerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76D46322AD20CCB00702661 /* TunerPresenter.swift */; };
 		C772E2AA2ACCB48C00D9AF59 /* AudioKitEX in Frameworks */ = {isa = PBXBuildFile; productRef = C772E2A92ACCB48C00D9AF59 /* AudioKitEX */; };
 		C772E2AD2ACCB53700D9AF59 /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = C772E2AC2ACCB53700D9AF59 /* SoundpipeAudioKit */; };
 		C776C1292ACC4B2A00B797F0 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = C776C1282ACC4B2A00B797F0 /* AudioKit */; };
+		C7AD380B2ACECA3D0023DACD /* ColorRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD380A2ACECA3D0023DACD /* ColorRes.swift */; };
+		C7AD380D2ACECAEA0023DACD /* UIColor+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD380C2ACECAEA0023DACD /* UIColor+ext.swift */; };
+		C7AD38152ACECC320023DACD /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7AD380F2ACECC320023DACD /* Inter-Bold.ttf */; };
+		C7AD38162ACECC320023DACD /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7AD38102ACECC320023DACD /* Inter-Light.ttf */; };
+		C7AD38172ACECC320023DACD /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7AD38112ACECC320023DACD /* Inter-Black.ttf */; };
+		C7AD38182ACECC320023DACD /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7AD38122ACECC320023DACD /* Inter-Regular.ttf */; };
+		C7AD38192ACECC320023DACD /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7AD38132ACECC320023DACD /* Inter-Medium.ttf */; };
+		C7AD381A2ACECC320023DACD /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C7AD38142ACECC320023DACD /* Inter-Thin.ttf */; };
+		C7AD381C2ACECCCC0023DACD /* FontsRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD381B2ACECCCC0023DACD /* FontsRes.swift */; };
+		C7AD381E2ACED7AC0023DACD /* TunerOffsetViewImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AD381D2ACED7AC0023DACD /* TunerOffsetViewImpl.swift */; };
 		C7B9C9032ACDB4DB00C41995 /* TunerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9C9022ACDB4DB00C41995 /* TunerBuilder.swift */; };
-		C7B9C9062ACDB68600C41995 /* TunerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9C9052ACDB68600C41995 /* TunerData.swift */; };
 		C7B9C9082ACDB69700C41995 /* TunerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9C9072ACDB69700C41995 /* TunerImpl.swift */; };
 		C7B9C90B2ACDB6EA00C41995 /* FrequencyDetectorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9C90A2ACDB6EA00C41995 /* FrequencyDetectorImpl.swift */; };
 		C7B9C90F2ACDB76100C41995 /* AudioInputImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B9C90E2ACDB76100C41995 /* AudioInputImpl.swift */; };
 		C7C8DE662ACDCC3900C55A6D /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C8DE652ACDCC3900C55A6D /* Notes.swift */; };
+		C7C92CCF2AD021BD008D049A /* NotePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C92CCE2AD021BD008D049A /* NotePickerDelegate.swift */; };
+		C7C99C2F2AD1F5B20099EE0C /* NotePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C99C2E2AD1F5B20099EE0C /* NotePickerView.swift */; };
+		C7ED2C922ACF347B00E27860 /* TunerPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ED2C912ACF347B00E27860 /* TunerPresenterImpl.swift */; };
+		C7ED2C942ACF352000E27860 /* TunerScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ED2C932ACF352000E27860 /* TunerScreenBuilder.swift */; };
 		C7F271A72ACDA99300E37CDF /* Instruments.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F271A62ACDA99300E37CDF /* Instruments.swift */; };
 		C7F271AB2ACDACEE00E37CDF /* AudioInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F271AA2ACDACEE00E37CDF /* AudioInput.swift */; };
 		C7F271AD2ACDAFEA00E37CDF /* Tuner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F271AC2ACDAFEA00E37CDF /* Tuner.swift */; };
+		C7FF89582ACEF175000C1062 /* TunerArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF89572ACEF175000C1062 /* TunerArrowView.swift */; };
+		C7FF895A2ACF07C6000C1062 /* TunerSubArrowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FF89592ACF07C6000C1062 /* TunerSubArrowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C71045162ACC47E000DB7E44 /* GuitarTunerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitarTunerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C71045192ACC47E000DB7E44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C710451B2ACC47E000DB7E44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C710451D2ACC47E000DB7E44 /* TunerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerViewController.swift; sourceTree = "<group>"; };
+		C710451D2ACC47E000DB7E44 /* TunerViewImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerViewImpl.swift; sourceTree = "<group>"; };
 		C71045222ACC47E100DB7E44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C71045252ACC47E100DB7E44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C71045272ACC47E100DB7E44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C710BE192ACDA4E500DA5B01 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		C710BE1B2ACDA79500DA5B01 /* FrequencyDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyDetector.swift; sourceTree = "<group>"; };
+		C74A12A02ACEA80E00482031 /* NotePickerViewImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePickerViewImpl.swift; sourceTree = "<group>"; };
+		C74A12A32ACEA95200482031 /* UIView+addViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addViews.swift"; sourceTree = "<group>"; };
+		C74A12A52ACEAADA00482031 /* NotePickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePickerCell.swift; sourceTree = "<group>"; };
+		C76D462C2AD2087700702661 /* TunerOffsetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerOffsetView.swift; sourceTree = "<group>"; };
+		C76D462E2AD2096200702661 /* TunerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerView.swift; sourceTree = "<group>"; };
+		C76D46302AD20B0800702661 /* Catalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catalog.swift; sourceTree = "<group>"; };
+		C76D46322AD20CCB00702661 /* TunerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerPresenter.swift; sourceTree = "<group>"; };
+		C7AD380A2ACECA3D0023DACD /* ColorRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRes.swift; sourceTree = "<group>"; };
+		C7AD380C2ACECAEA0023DACD /* UIColor+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ext.swift"; sourceTree = "<group>"; };
+		C7AD380F2ACECC320023DACD /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		C7AD38102ACECC320023DACD /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		C7AD38112ACECC320023DACD /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		C7AD38122ACECC320023DACD /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		C7AD38132ACECC320023DACD /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		C7AD38142ACECC320023DACD /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		C7AD381B2ACECCCC0023DACD /* FontsRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsRes.swift; sourceTree = "<group>"; };
+		C7AD381D2ACED7AC0023DACD /* TunerOffsetViewImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerOffsetViewImpl.swift; sourceTree = "<group>"; };
 		C7B9C9022ACDB4DB00C41995 /* TunerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerBuilder.swift; sourceTree = "<group>"; };
-		C7B9C9052ACDB68600C41995 /* TunerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerData.swift; sourceTree = "<group>"; };
 		C7B9C9072ACDB69700C41995 /* TunerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerImpl.swift; sourceTree = "<group>"; };
 		C7B9C90A2ACDB6EA00C41995 /* FrequencyDetectorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyDetectorImpl.swift; sourceTree = "<group>"; };
 		C7B9C90E2ACDB76100C41995 /* AudioInputImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioInputImpl.swift; sourceTree = "<group>"; };
 		C7C8DE652ACDCC3900C55A6D /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		C7C92CCE2AD021BD008D049A /* NotePickerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePickerDelegate.swift; sourceTree = "<group>"; };
+		C7C99C2E2AD1F5B20099EE0C /* NotePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePickerView.swift; sourceTree = "<group>"; };
+		C7ED2C912ACF347B00E27860 /* TunerPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerPresenterImpl.swift; sourceTree = "<group>"; };
+		C7ED2C932ACF352000E27860 /* TunerScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerScreenBuilder.swift; sourceTree = "<group>"; };
 		C7F271A62ACDA99300E37CDF /* Instruments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instruments.swift; sourceTree = "<group>"; };
 		C7F271AA2ACDACEE00E37CDF /* AudioInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioInput.swift; sourceTree = "<group>"; };
 		C7F271AC2ACDAFEA00E37CDF /* Tuner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuner.swift; sourceTree = "<group>"; };
+		C7FF89572ACEF175000C1062 /* TunerArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerArrowView.swift; sourceTree = "<group>"; };
+		C7FF89592ACF07C6000C1062 /* TunerSubArrowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunerSubArrowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +147,11 @@
 		C710452E2ACC487F00DB7E44 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C7AD380E2ACECC260023DACD /* Fonts */,
 				C71045222ACC47E100DB7E44 /* Assets.xcassets */,
+				C7AD380A2ACECA3D0023DACD /* ColorRes.swift */,
+				C7AD381B2ACECCCC0023DACD /* FontsRes.swift */,
+				C76D46302AD20B0800702661 /* Catalog.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -120,6 +168,7 @@
 		C71045302ACC491500DB7E44 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				C74A12A22ACEA94A00482031 /* Extentions */,
 				C7F271A82ACDA9B600E37CDF /* Models */,
 				C71045312ACC491F00DB7E44 /* Services */,
 			);
@@ -147,9 +196,36 @@
 		C71045332ACC494100DB7E44 /* TunerScreen */ = {
 			isa = PBXGroup;
 			children = (
-				C710451D2ACC47E000DB7E44 /* TunerViewController.swift */,
+				C7C92CCB2AD01895008D049A /* Views */,
+				C76D46322AD20CCB00702661 /* TunerPresenter.swift */,
+				C76D462E2AD2096200702661 /* TunerView.swift */,
+				C7ED2C912ACF347B00E27860 /* TunerPresenterImpl.swift */,
+				C710451D2ACC47E000DB7E44 /* TunerViewImpl.swift */,
+				C7ED2C932ACF352000E27860 /* TunerScreenBuilder.swift */,
 			);
 			path = TunerScreen;
+			sourceTree = "<group>";
+		};
+		C74A12A22ACEA94A00482031 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				C74A12A32ACEA95200482031 /* UIView+addViews.swift */,
+				C7AD380C2ACECAEA0023DACD /* UIColor+ext.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		C7AD380E2ACECC260023DACD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C7AD38112ACECC320023DACD /* Inter-Black.ttf */,
+				C7AD380F2ACECC320023DACD /* Inter-Bold.ttf */,
+				C7AD38102ACECC320023DACD /* Inter-Light.ttf */,
+				C7AD38132ACECC320023DACD /* Inter-Medium.ttf */,
+				C7AD38122ACECC320023DACD /* Inter-Regular.ttf */,
+				C7AD38142ACECC320023DACD /* Inter-Thin.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		C7B9C9042ACDB66D00C41995 /* Tuner */ = {
@@ -188,10 +264,40 @@
 			path = AudioInput;
 			sourceTree = "<group>";
 		};
+		C7C92CCB2AD01895008D049A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C7C92CCD2AD018A9008D049A /* NotePicker */,
+				C7C92CCC2AD018A2008D049A /* Arrow */,
+				C76D462C2AD2087700702661 /* TunerOffsetView.swift */,
+				C7AD381D2ACED7AC0023DACD /* TunerOffsetViewImpl.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C7C92CCC2AD018A2008D049A /* Arrow */ = {
+			isa = PBXGroup;
+			children = (
+				C7FF89572ACEF175000C1062 /* TunerArrowView.swift */,
+				C7FF89592ACF07C6000C1062 /* TunerSubArrowView.swift */,
+			);
+			path = Arrow;
+			sourceTree = "<group>";
+		};
+		C7C92CCD2AD018A9008D049A /* NotePicker */ = {
+			isa = PBXGroup;
+			children = (
+				C7C99C2E2AD1F5B20099EE0C /* NotePickerView.swift */,
+				C7C92CCE2AD021BD008D049A /* NotePickerDelegate.swift */,
+				C74A12A02ACEA80E00482031 /* NotePickerViewImpl.swift */,
+				C74A12A52ACEAADA00482031 /* NotePickerCell.swift */,
+			);
+			path = NotePicker;
+			sourceTree = "<group>";
+		};
 		C7F271A82ACDA9B600E37CDF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C7B9C9052ACDB68600C41995 /* TunerData.swift */,
 				C710BE192ACDA4E500DA5B01 /* Note.swift */,
 				C7C8DE652ACDCC3900C55A6D /* Notes.swift */,
 				C7F271A62ACDA99300E37CDF /* Instruments.swift */,
@@ -267,7 +373,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7AD38152ACECC320023DACD /* Inter-Bold.ttf in Resources */,
 				C71045262ACC47E100DB7E44 /* LaunchScreen.storyboard in Resources */,
+				C7AD38172ACECC320023DACD /* Inter-Black.ttf in Resources */,
+				C7AD38162ACECC320023DACD /* Inter-Light.ttf in Resources */,
+				C7AD381A2ACECC320023DACD /* Inter-Thin.ttf in Resources */,
+				C7AD38192ACECC320023DACD /* Inter-Medium.ttf in Resources */,
+				C7AD38182ACECC320023DACD /* Inter-Regular.ttf in Resources */,
 				C71045232ACC47E100DB7E44 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,19 +392,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7B9C90B2ACDB6EA00C41995 /* FrequencyDetectorImpl.swift in Sources */,
+				C7AD381C2ACECCCC0023DACD /* FontsRes.swift in Sources */,
 				C7C8DE662ACDCC3900C55A6D /* Notes.swift in Sources */,
-				C710451E2ACC47E000DB7E44 /* TunerViewController.swift in Sources */,
+				C76D462D2AD2087700702661 /* TunerOffsetView.swift in Sources */,
+				C710451E2ACC47E000DB7E44 /* TunerViewImpl.swift in Sources */,
 				C7B9C90F2ACDB76100C41995 /* AudioInputImpl.swift in Sources */,
+				C7ED2C922ACF347B00E27860 /* TunerPresenterImpl.swift in Sources */,
+				C76D462F2AD2096200702661 /* TunerView.swift in Sources */,
+				C7AD380B2ACECA3D0023DACD /* ColorRes.swift in Sources */,
 				C710BE1A2ACDA4E500DA5B01 /* Note.swift in Sources */,
+				C76D46312AD20B0800702661 /* Catalog.swift in Sources */,
+				C76D46332AD20CCB00702661 /* TunerPresenter.swift in Sources */,
 				C7B9C9082ACDB69700C41995 /* TunerImpl.swift in Sources */,
 				C710451A2ACC47E000DB7E44 /* AppDelegate.swift in Sources */,
+				C7AD380D2ACECAEA0023DACD /* UIColor+ext.swift in Sources */,
 				C710BE1C2ACDA79500DA5B01 /* FrequencyDetector.swift in Sources */,
-				C7B9C9062ACDB68600C41995 /* TunerData.swift in Sources */,
+				C7C92CCF2AD021BD008D049A /* NotePickerDelegate.swift in Sources */,
+				C7FF89582ACEF175000C1062 /* TunerArrowView.swift in Sources */,
 				C7F271AB2ACDACEE00E37CDF /* AudioInput.swift in Sources */,
 				C7F271A72ACDA99300E37CDF /* Instruments.swift in Sources */,
+				C7C99C2F2AD1F5B20099EE0C /* NotePickerView.swift in Sources */,
+				C74A12A42ACEA95200482031 /* UIView+addViews.swift in Sources */,
+				C7FF895A2ACF07C6000C1062 /* TunerSubArrowView.swift in Sources */,
+				C7AD381E2ACED7AC0023DACD /* TunerOffsetViewImpl.swift in Sources */,
 				C7F271AD2ACDAFEA00E37CDF /* Tuner.swift in Sources */,
+				C74A12A12ACEA80E00482031 /* NotePickerViewImpl.swift in Sources */,
+				C74A12A62ACEAADA00482031 /* NotePickerCell.swift in Sources */,
 				C7B9C9032ACDB4DB00C41995 /* TunerBuilder.swift in Sources */,
 				C710451C2ACC47E000DB7E44 /* SceneDelegate.swift in Sources */,
+				C7ED2C942ACF352000E27860 /* TunerScreenBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

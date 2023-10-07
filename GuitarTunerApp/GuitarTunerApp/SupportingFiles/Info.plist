@@ -21,5 +21,14 @@
 	</dict>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Microphone permission is used to capture Input Device and/or System Audio streams.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Inter-Black.ttf</string>
+		<string>Inter-Bold.ttf</string>
+		<string>Inter-Light.ttf</string>
+		<string>Inter-Medium.ttf</string>
+		<string>Inter-Regular.ttf</string>
+		<string>Inter-Thin.ttf</string>
+	</array>
 </dict>
 </plist>

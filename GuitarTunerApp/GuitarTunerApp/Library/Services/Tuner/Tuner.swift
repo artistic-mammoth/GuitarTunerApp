@@ -9,16 +9,11 @@
 /// Tuner for input detection
 protocol Tuner {
     /// Handler for data of pitch and note from input device
-    var dataHandler: ((TunerData) -> ())? { get set }
-    
-    /**
-     Tracking note setting
-     
-     - Parameters:
-     - notes: Notes for tracking
-     */
-    func setupNotes(_ notes: Notes)
-    
+    var dataHandler: ((_ frequency: Double) -> ())? { get set }
+
     /// Start of detecting from input device
     func startDetecting()
+    
+    /// Stop detection
+    func stopDetecting()
 }
