@@ -10,7 +10,7 @@ import Foundation
 enum Catalog {
     enum Names {
         static let low: String = "Low"
-        static let hieght: String = "Hieght"
+        static let hieght: String = "High"
         static let tuner: String = "Tuner"
         static let auto: String = "Auto"
         
