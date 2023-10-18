@@ -60,8 +60,21 @@ class TunerViewImpl: UIViewController {
         $0.font = .mediumInter(size: 17)
         $0.numberOfLines = 0
         $0.textAlignment = .left
+        $0.isUserInteractionEnabled = false
         return $0
     }(UILabel())
+    
+    private lazy var instrumentArrowIcon: UIImageView = {
+        $0.image = .chevronDown
+        $0.isUserInteractionEnabled = false
+        return $0
+    }(UIImageView())
+    
+    private lazy var instrumentButton: UIButton = {
+        $0.backgroundColor = .clear
+        $0.showsMenuAsPrimaryAction = true
+        return $0
+    }(UIButton())
     
     // MARK: - Init
     @available (*, unavailable)
@@ -111,6 +124,16 @@ extension TunerViewImpl: TunerView {
     func deselectAllNotes() {
         notePickerView.deselectAll()
     }
+    
+    func updateInstrumentMenu(_ items: [Instruments]) {
+        instrumentLabel.text = items.first?.getName()
+        let actions = items.map { item in
+            UIAction(title: item.getName()) { [weak self] _ in
+                self?.instrumentLabel.text = item.getName()
+                self?.presenter?.instrumentDidPicked(item)
+            } }
+        instrumentButton.menu = UIMenu(title: "Instruments", children: actions)
+    }
 }
 
 // MARK: - NotePickerDelegate
@@ -123,16 +146,14 @@ extension TunerViewImpl: NotePickerDelegate {
 // MARK: - Private extension
 private extension TunerViewImpl {
     func setupView() {
-        view.addViews(tunerLabel, notePickerView, frequencyCurrentLabel, lowHightLabel, tunerOffsetView, autoModeTrigger, autoModeLabel, instrumentLabel)
+        view.addViews(tunerLabel, notePickerView, frequencyCurrentLabel, lowHightLabel, tunerOffsetView, autoModeTrigger, autoModeLabel, instrumentButton)
+        instrumentButton.addViews(instrumentLabel, instrumentArrowIcon)
         
         view.backgroundColor = .whiteMain
         lowHightLabel.text = Catalog.Names.low
         autoModeLabel.text = Catalog.Names.auto
         
         notePickerView.delegate = self
-
-        // TODO: - Implement choosing instruments
-        instrumentLabel.text = "6-String"
         
         let context = CGSize(width: UIScreen.main.bounds.width - 100,
                              height: UIScreen.main.bounds.width - 100)
@@ -165,9 +186,17 @@ private extension TunerViewImpl {
             
             autoModeLabel.centerYAnchor.constraint(equalTo: autoModeTrigger.centerYAnchor),
             autoModeLabel.trailingAnchor.constraint(equalTo: autoModeTrigger.leadingAnchor, constant: -10),
-
-            instrumentLabel.centerYAnchor.constraint(equalTo: autoModeTrigger.centerYAnchor),
-            instrumentLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20)
+            
+            instrumentButton.centerYAnchor.constraint(equalTo: autoModeTrigger.centerYAnchor),
+            instrumentButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            instrumentButton.trailingAnchor.constraint(equalTo: instrumentArrowIcon.trailingAnchor, constant: 10),
+            instrumentButton.heightAnchor.constraint(equalToConstant: 30),
+            
+            instrumentLabel.centerYAnchor.constraint(equalTo: instrumentButton.centerYAnchor),
+            instrumentLabel.leadingAnchor.constraint(equalTo: instrumentButton.leadingAnchor, constant: 10),
+            
+            instrumentArrowIcon.leadingAnchor.constraint(equalTo: instrumentLabel.trailingAnchor, constant: 5),
+            instrumentArrowIcon.centerYAnchor.constraint(equalTo: instrumentButton.centerYAnchor),
         ])
         
     }

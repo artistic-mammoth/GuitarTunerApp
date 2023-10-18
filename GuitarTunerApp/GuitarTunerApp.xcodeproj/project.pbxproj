@@ -14,6 +14,7 @@
 		C71045262ACC47E100DB7E44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71045242ACC47E100DB7E44 /* LaunchScreen.storyboard */; };
 		C710BE1A2ACDA4E500DA5B01 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C710BE192ACDA4E500DA5B01 /* Note.swift */; };
 		C710BE1C2ACDA79500DA5B01 /* FrequencyDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C710BE1B2ACDA79500DA5B01 /* FrequencyDetector.swift */; };
+		C71E79C92AE08CE000C4D0D3 /* ImageRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71E79C82AE08CE000C4D0D3 /* ImageRes.swift */; };
 		C74A12A12ACEA80E00482031 /* NotePickerViewImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A12A02ACEA80E00482031 /* NotePickerViewImpl.swift */; };
 		C74A12A42ACEA95200482031 /* UIView+addViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A12A32ACEA95200482031 /* UIView+addViews.swift */; };
 		C74A12A62ACEAADA00482031 /* NotePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A12A52ACEAADA00482031 /* NotePickerCell.swift */; };
@@ -60,6 +61,7 @@
 		C71045272ACC47E100DB7E44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C710BE192ACDA4E500DA5B01 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		C710BE1B2ACDA79500DA5B01 /* FrequencyDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyDetector.swift; sourceTree = "<group>"; };
+		C71E79C82AE08CE000C4D0D3 /* ImageRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRes.swift; sourceTree = "<group>"; };
 		C74A12A02ACEA80E00482031 /* NotePickerViewImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePickerViewImpl.swift; sourceTree = "<group>"; };
 		C74A12A32ACEA95200482031 /* UIView+addViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addViews.swift"; sourceTree = "<group>"; };
 		C74A12A52ACEAADA00482031 /* NotePickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotePickerCell.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				C7AD380A2ACECA3D0023DACD /* ColorRes.swift */,
 				C7AD381B2ACECCCC0023DACD /* FontsRes.swift */,
 				C76D46302AD20B0800702661 /* Catalog.swift */,
+				C71E79C82AE08CE000C4D0D3 /* ImageRes.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				C76D462D2AD2087700702661 /* TunerOffsetView.swift in Sources */,
 				C710451E2ACC47E000DB7E44 /* TunerViewImpl.swift in Sources */,
 				C7B9C90F2ACDB76100C41995 /* AudioInputImpl.swift in Sources */,
+				C71E79C92AE08CE000C4D0D3 /* ImageRes.swift in Sources */,
 				C7ED2C922ACF347B00E27860 /* TunerPresenterImpl.swift in Sources */,
 				C76D462F2AD2096200702661 /* TunerView.swift in Sources */,
 				C7AD380B2ACECA3D0023DACD /* ColorRes.swift in Sources */,
@@ -488,7 +492,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -542,7 +546,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

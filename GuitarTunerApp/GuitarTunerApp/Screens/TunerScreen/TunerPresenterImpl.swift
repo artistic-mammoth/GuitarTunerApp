@@ -14,7 +14,8 @@ final class TunerPresenterImpl {
     // MARK: - Private properties
     private var tuner: Tuner
     
-    private var data: Notes = Instruments.guitar6String.getNotes()
+    private var data: Notes = []
+    private let defaultInstrument = Instruments.guitar6String
     private var currentNote: (index: Int, note: Note)?
     private var isAutoMode: Bool = false {
         didSet { resetAutoMode() }
@@ -36,8 +37,9 @@ final class TunerPresenterImpl {
 // MARK: - TunerPresenter
 extension TunerPresenterImpl: TunerPresenter {
     func viewDidLoaded() {
-        let guitarNotes = Instruments.guitar6String.getNotes()
-        view?.setupNotesPreset(notes: guitarNotes)
+        data = defaultInstrument.getNotes()
+        view?.setupNotesPreset(notes: data)
+        view?.updateInstrumentMenu(Instruments.allCases)
     }
     
     func setCurrentNote(at index: Int) {
@@ -46,6 +48,11 @@ extension TunerPresenterImpl: TunerPresenter {
     
     func setAutoMode(isEnabled: Bool) {
         isAutoMode = isEnabled
+    }
+    
+    func instrumentDidPicked(_ instrument: Instruments) {
+        data = instrument.getNotes()
+        view?.setupNotesPreset(notes: data)
     }
 }
 

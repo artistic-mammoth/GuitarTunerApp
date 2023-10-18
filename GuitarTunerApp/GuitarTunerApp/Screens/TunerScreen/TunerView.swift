@@ -51,4 +51,12 @@ protocol TunerView: UIViewController {
     
     /// Deselect all notes.
     func deselectAllNotes()
+    
+    /**
+     Select available instruments to choose from.
+     
+     - Parameters:
+        - items: Array of instruments.
+     */
+    func updateInstrumentMenu(_ items: [Instruments])
 }

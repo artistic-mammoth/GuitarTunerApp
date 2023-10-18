@@ -25,4 +25,12 @@ protocol TunerPresenter {
         - isOn: Is automode enabled.
      */
     func setAutoMode(isEnabled: Bool)
+    
+    /**
+     Callback from View when instrument was chosen.
+     
+     - Parameters:
+        - instrument: Type of Instrument
+     */
+    func instrumentDidPicked(_ instrument: Instruments)
 }

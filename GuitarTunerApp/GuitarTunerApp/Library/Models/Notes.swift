@@ -18,6 +18,7 @@ extension Notes {
         - Returns: Finded note
      */
     func findClosestTo(_ inputFrequency: Double) -> (index: Int, note: Note) {
+        guard self.count > 0 else { return (-1, Note(frequency: inputFrequency, name: "None"))}
         let closest = (self.reduce(self[0]) { abs($0.frequency - inputFrequency) < abs($1.frequency - inputFrequency) ? $0 : $1 })
         let index = self.firstIndex { $0 == closest }!
         return (index, closest)
